@@ -385,7 +385,6 @@ public class InputPanel implements IEmoticonSelectedListener, IAudioRecordCallba
     private void onTextMessageSendButtonPressed() {
         String text = messageEditText.getText().toString();
         IMMessage textMessage = createTextMessage(text);
-
         if (container.proxy.sendMessage(textMessage)) {
             restoreText(true);
         }
