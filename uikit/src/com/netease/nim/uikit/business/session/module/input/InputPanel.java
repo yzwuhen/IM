@@ -573,13 +573,13 @@ public class InputPanel implements IEmoticonSelectedListener, IAudioRecordCallba
             return;
         }
         String textMessage = editText.getText().toString();
-//        if (!TextUtils.isEmpty(StringUtil.removeBlanks(textMessage)) && editText.hasFocus()) {
-//            moreFuntionButtonInInputBar.setVisibility(View.GONE);
-//            sendMessageButtonInInputBar.setVisibility(View.VISIBLE);
-//        } else {
-//            sendMessageButtonInInputBar.setVisibility(View.GONE);
-//            moreFuntionButtonInInputBar.setVisibility(View.VISIBLE);
-//        }
+        if (!TextUtils.isEmpty(StringUtil.removeBlanks(textMessage)) && editText.hasFocus()) {
+            moreFuntionButtonInInputBar.setVisibility(View.GONE);
+            sendMessageButtonInInputBar.setVisibility(View.VISIBLE);
+        } else {
+            sendMessageButtonInInputBar.setVisibility(View.GONE);
+            moreFuntionButtonInInputBar.setVisibility(View.VISIBLE);
+        }
     }
 
     /**
@@ -861,17 +861,17 @@ public class InputPanel implements IEmoticonSelectedListener, IAudioRecordCallba
 
     public void switchRobotMode(boolean isRobot) {
         isRobotSession = isRobot;
-//        if (isRobot) {
-//            textAudioSwitchLayout.setVisibility(View.GONE);
-//            emojiButtonInInputBar.setVisibility(View.GONE);
-//            sendMessageButtonInInputBar.setVisibility(View.VISIBLE);
-//            moreFuntionButtonInInputBar.setVisibility(View.GONE);
-//        } else {
-//            textAudioSwitchLayout.setVisibility(View.VISIBLE);
-//            emojiButtonInInputBar.setVisibility(View.VISIBLE);
-//            sendMessageButtonInInputBar.setVisibility(View.GONE);
-//            moreFuntionButtonInInputBar.setVisibility(View.VISIBLE);
-//        }
+        if (isRobot) {
+            textAudioSwitchLayout.setVisibility(View.GONE);
+            emojiButtonInInputBar.setVisibility(View.GONE);
+            sendMessageButtonInInputBar.setVisibility(View.VISIBLE);
+            moreFuntionButtonInInputBar.setVisibility(View.GONE);
+        } else {
+            textAudioSwitchLayout.setVisibility(View.VISIBLE);
+            emojiButtonInInputBar.setVisibility(View.VISIBLE);
+            sendMessageButtonInInputBar.setVisibility(View.GONE);
+            moreFuntionButtonInInputBar.setVisibility(View.VISIBLE);
+        }
 
     }
 }

@@ -227,6 +227,7 @@ public class MessageListPanelEx {
 
         @Override
         public void onItemLongClick(IRecyclerView adapter, View view, int position) {
+            Log.v("ssss=","===============长按？");
         }
 
         @Override

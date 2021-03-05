@@ -313,7 +313,7 @@ public abstract class MsgViewHolderBase extends RecyclerViewHolder<BaseMultiItem
         setTimeTextView();
         setStatus();
         setOnClickListener();
-        setLongClickListener();
+     //   setLongClickListener();
         setContent();
 //        setExtension();
         setReadReceipt();
